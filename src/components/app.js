@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Switch, Route} from "react-router-dom"
 
-import AdminLogin from "./font-end/admin-login"
-import AdminDashboard from "./font-end/admin-dashboard"
 
-import Homepage from "./frontend/homepage"
+import AdminLogin from "./auth/admin-login"
+import AdminDashboard  from "./auth/admin-dashboard"
+
+
+import Homepage from "./pages/homepage"
 
 export default class App extends Component {
   render() {
