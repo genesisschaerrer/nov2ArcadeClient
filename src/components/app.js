@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Switch, Route} from "react-router-dom"
 
-import AdminLogin from "./font-end/admin-login"
+import AdminLogin from "./auth/admin-login"
 
-import Homepage from "./frontend/homepage"
+import Homepage from "./pages/homepage"
 
 export default class App extends Component {
   render() {
