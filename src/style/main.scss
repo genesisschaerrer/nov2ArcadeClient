@@ -1,4 +1,10 @@
 body {
-    margin: 0px;
+  margin: 0px;
 }
 @import "./navbar.scss";
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background: url(../components/frontend//imgs/bg.png) repeat;
+}
