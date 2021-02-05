@@ -13,7 +13,7 @@ export default class App extends Component {
     return (
       <div className='app'>
         <BrowserRouter>
-       
+      
           <Switch>
             <Route exact path='/' component={Homepage} />
             <Route path ="/login" component={AdminLogin} />
@@ -22,7 +22,7 @@ export default class App extends Component {
           </Switch>
         </BrowserRouter>
 
-       
+      
 
       </div>
     );

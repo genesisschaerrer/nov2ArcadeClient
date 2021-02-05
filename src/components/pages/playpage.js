@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Navbar from "../../navigation/navbar"
 
 export default class Playpage extends Component {
   constructor(props) {
@@ -24,6 +25,7 @@ export default class Playpage extends Component {
   render() {
     return (
       <div>
+        <Navbar />
         <h1>{this.gameName}</h1>
         <iframe src={this.url}></iframe>
         <p>{this.description}</p>
