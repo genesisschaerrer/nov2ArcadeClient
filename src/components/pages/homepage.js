@@ -11,6 +11,12 @@ export default class Homepage extends Component {
       title: "",
     };
   }
+  
+ 
+
+  //make axios get reuquest 
+  //.then(data => console.log(data)) update state
+  //mapping the data you get back
   render() {
     return (
       <div>
