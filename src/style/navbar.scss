@@ -1,0 +1,14 @@
+.navbar {
+  height: 200px;
+  background-color: black;
+
+  img {
+    height: 200px;
+    justify-content: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+}
