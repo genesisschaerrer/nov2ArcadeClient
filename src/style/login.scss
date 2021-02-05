@@ -1,0 +1,33 @@
+.login-container{
+
+
+    .login-title {
+        margin: 2em auto;
+        text-align: center;
+        font-size: 3rem;
+        color: white;
+    }
+
+    .login-form {
+        margin: 1em auto;
+        height: 50vh;
+        width: 50vw;
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .login-input{
+            width: 30%;
+            height: 2.5rem;
+        }
+
+        .login-btn{
+            background-color: white;
+        }
+    }
+
+}
+
+

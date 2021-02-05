@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Navbar from "./navbar";
+import Navbar from "../../navigation/navbar";
 
 export default class Homepage extends Component {
   constructor() {

@@ -7,6 +7,7 @@ const AdminDashboard = () => {
     const [description, setDescription] = useState("")
     const [image, setImage] = useState("")
     const history = useHistory
+    
     const handleSubmit = (e) => {
         e.preventDefault()
         //.then("LOGGED_IN")
@@ -21,28 +22,33 @@ const AdminDashboard = () => {
     const mockData = [{id: 1, gameName: "some name", url: "some Url", description: "some description", image: "some image url"},
                     {id: 2, gameName: "another name", url: "some Url", description: "some description", image: "some image url"}]
     return (
-        <div>
-            <h1>Admin Dashboard</h1>
+        <div className="dashboard-container"> 
+            <h1 className="dashboard-title">Admin Dashboard</h1>
             <form className="form" onSubmit={handleSubmit}>
+                <div className="form-title">New Game</div>
                 <input
+                    className="login-input"
                     type="text"
                     placeholder="name"
                     value={gameName}
                     onChange={e => setGameName(e.target.value)}
                 />
                 <input
+                    className="login-input"
                     type="text"
                     placeholder="game url"
                     value={url}
                     onChange={e => setUrl(e.target.value)}
                 />
                 <input
+                    className="login-input"
                     type="text"
                     placeholder="description"
                     value={description}
                     onChange={e => setDescription(e.target.value)}
                 />
                 <input
+                    className="login-input"
                     type="text"
                     placeholder="image url"
                     value={image}
@@ -52,7 +58,7 @@ const AdminDashboard = () => {
            </form>
            {mockData.map(game => {
                return (
-                   <div key={mockData.id}>
+                   <div className="all-games-dashboard" key={mockData.id}>
                        <div className="dashboard-game-name">{game.gameName}</div>
                        <img src={game.image} alt="game image" />
                        <div className="dashborad-game-description">{game.description}</div>

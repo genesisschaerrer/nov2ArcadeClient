@@ -1,0 +1,33 @@
+.dashboard-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .dashboard-title{
+        color: white;
+    }
+
+    .form{
+        background-color: yellow;
+        width: 80vh;
+        height: 35vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .form-title{
+            font-size: 2.3rem;
+        }
+
+        .login-input{
+            width: 30%;
+            height: 2.5rem;
+        }
+    }
+
+    .all-games-dashboard{
+        color: white;
+    }
+}

@@ -9,10 +9,11 @@ const AdminLogin = () => {
         console.log("hit handle submit")
     }
     return (
-        <div>
-            <h1>Admin Login</h1>
-            <form onSubmit={handleSubmit}>
+        <div className="login-container">
+            <h1 className="login-title">Admin Login</h1>
+            <form className="login-form" onSubmit={handleSubmit}>
                 <input
+                    className="login-input"
                     type="text"
                     placeholder="username"
                     value={username}
@@ -20,13 +21,14 @@ const AdminLogin = () => {
                 />
 
                 <input
+                    className="login-input"
                     type="text"
                     placeholder="password"
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                 />
 
-                <button>Submit</button>
+                <div className="login-btn">Submit</div>
             </form>
         </div>
     )

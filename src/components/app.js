@@ -17,13 +17,9 @@ export default class App extends Component {
           <Switch>
             <Route exact path='/' component={Homepage} />
             <Route path ="/login" component={AdminLogin} />
-            <Route path="/admindashboard" component={AdminDashboard} />
-            
+            <Route path="/admindashboard" component={AdminDashboard} />            
           </Switch>
-        </BrowserRouter>
-
-      
-
+        </BrowserRouter>    
       </div>
     );
   }

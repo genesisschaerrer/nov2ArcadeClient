@@ -8,3 +8,7 @@ body {
   height: 100vh;
   background: url('./imgs/bg.png') repeat;
 }
+
+
+@import "./login.scss";
+@import "./dashboard.scss"
